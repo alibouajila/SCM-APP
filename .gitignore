@@ -1,0 +1,5 @@
+# Node.js dependencies
+node_modules/
+# Dependency lockfiles (optional, if you don't want them in version control)
+package-lock.json
+yarn.lock

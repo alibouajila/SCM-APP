@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion du stock</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h1>Gestion du stock</h1>
+            <p>Société ARmotors</p><br><br>
+            <div class="home-button">
+                <a href="/" title="Return to Home">
+                    <img src="/assets/logo.png" alt="Home Logo" style="width: 70px; height: auto;"class="home-logo">
+                </a>
+            </div>
+        </div>
+        
+        <div class="inputs">
+            <input placeholder="title" type="text" id="title">
+            <div class="price">
+                <input placeholder="price" type="number" id="price">
+                <input placeholder="% discount" min="0" max="100" type="number" id="discount">
+                <small id="total">  0.00 TND</small>
+            </div>
+            <input value="1" id="quantity" placeholder="Quantity" type="number" min="1">
+            <input id="category" placeholder="category" type="text" value="General">
+            <button id="submit">CREATE</button>
+        </div>
+        <div class="outputs">               
+            <div id="deleteall"><br>
+                <button onclick="deleteAll()" id="btndelete">Delete All</button><br>
+            </div>
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Discount</th>
+                    <th>Category</th>
+                    <th>Total</th>
+                </tr>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

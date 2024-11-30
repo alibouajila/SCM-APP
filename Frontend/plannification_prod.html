@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning Page</title>
+    <link rel="stylesheet" href="planstyle.css"> <!-- Link your app's global styles -->
+</head>
+<body>
+    <!-- Main Layout -->
+    <div class="container">
+        <h1 class="title">Production Planning</h1>
+
+        <!-- Budget Input Section -->
+        <div class="input-card">
+            <div class="home-button">
+                <a href="/" title="Return to Home">
+                    <img src="/assets/logo.png" alt="Home Logo" class="home-logo">
+                </a>
+            </div>
+            <h3 class="card-title">Enter Your Budget</h3>
+            <form id="planning-form" class="form">
+                <div class="input-group">
+                    <span class="input-label">TND</span>
+                    <input type="number" id="budget" name="budget" class="form-input" placeholder="Enter your budget" required min="1" step="0.01">
+                </div>
+                <button type="submit" class="btn">Calculate Plan</button>
+            </form>
+        </div>
+
+        <!-- Plan Results Section -->
+        <div id="results-section" class="results-card">
+            <h3 class="card-title">Optimal Import Plan</h3>
+            <table id="plan-table" class="plan-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Total Cost (TND)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Plan details will be inserted dynamically -->
+                </tbody>
+            </table>
+
+            <!-- Remaining Budget -->
+            <div id="remaining-budget" class="remaining-budget">
+                <!-- Remaining budget will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="plannification.js"></script>
+</body>
+</html>

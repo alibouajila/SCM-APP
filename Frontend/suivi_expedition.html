@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systèmes de suivi des expéditions</title>
+    <link rel="stylesheet" href="./styleexpedition.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Systèmes de suivi des expéditions</h1>
+        <div class="home-button">
+            <a href="/" title="Return to Home">
+                <img src="/assets/logo.png" class="home-logo" alt="Home Logo" style="width: 70px; height: auto;">
+            </a>
+        </div>
+        
+        <div class="expedition-table">
+            <div class="actions">
+                <button id="delete-received" class="delete-received-btn">Delete All Received Commands</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Order Name</th>
+                        <th>Category</th>
+                        <th>Total (TND)</th>
+                        <th>Location</th>
+                        <th>Reçu</th>
+                        <th>Cancel ?</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- Data will be dynamically inserted here -->
+                </tbody>
+            </table>
+            
+            
+        </div>
+    </div>
+    <script src="./scriptexpedition.js"></script>
+</body>
+</html>

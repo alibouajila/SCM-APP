@@ -1,0 +1,98 @@
+body {
+    background-color: #222;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #9b59b6;
+    margin-bottom: 20px;
+}
+
+.expedition-table {
+    margin: auto;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #444;
+}
+
+table th {
+    background-color: #9b59b6;
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #444;
+}
+
+table tr:hover {
+    background-color: #555;
+}
+.toggle-recu-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.toggle-recu-btn:focus {
+    outline: none;
+}
+.delete-received-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #a020f0; /* Purple theme */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.delete-received-btn:hover {
+    background-color: #8b008b; /* Darker purple */
+    transform: scale(1.05);
+}
+.cancel-btn {
+    background-color: #ff4d4d; /* Red color for cancel button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover {
+    background-color: #e60000; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+
+.home-logo:hover{
+    transform: scale(1.05);
+    }
+    .home-logo{
+    transition: 0.4s ease-in-out;    }
